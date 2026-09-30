@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@font-face {
+    font-family: 'ClashDisplay';
+    src: url('/fonts/ClashDisplay_Complete/Fonts/TTF/ClashDisplay-Variable.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}@font-face {
+    font-family: 'ClashDisplayBold';
+    src: url('/fonts/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Bold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+    --cream:#fdfbf7;
+    --orange:#bf441b;
+    --dark:#1e1e1e;
+    --line:rgba(30,30,30,.14);
+    --muted:#777;
+}
+*{
+    box-sizing: border-box;
+    font-family: ClashDisplay, Open Sans, sans-serif;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+.scroll-target{
+    scroll-margin-top:100px;
+}
+.kvkk-page{
+    min-height:100vh;
+    padding:25px 5% 100px;
+}
+.kvkk-hero{
+    padding:180px 0 120px;
+    max-width:1400px;
+}
+.kvkk-label{
+    display:block;
+    margin-bottom:30px;
+    color:var(--orange);
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+}
+.kvkk-title{
+    max-width:1100px;
+    font-size:clamp(60px,10vw,150px);
+    line-height:.85;
+    letter-spacing:-.08em;
+    font-weight:800;
+}
+.kvkk-title span{
+    color:var(--orange);
+}
+.kvkk-intro{
+    max-width:650px;
+    margin-top:55px;
+    font-size:18px;
+    line-height:1.7;
+    color:#555;
+}
+.kvkk-layout{
+    display:grid;
+    grid-template-columns:280px minmax(0,80%);
+    justify-content:space-between;
+    gap:80px;
+    margin:0 auto;
+}
+.kvkk-nav{
+    position:sticky;
+    top:110px;
+    align-self:start;
+}
+.kvkk-nav-label{
+    display:block;
+    margin-bottom:20px;
+    font-size:10px;
+    font-weight:800;
+    letter-spacing:.15em;
+    color:var(--muted);
+}
+.kvkk-nav a{
+    display:block;
+    padding:10px 0;
+    border-bottom:1px solid var(--line);
+    color:var(--dark);
+    text-decoration:none;
+    font-size:12px;
+    font-weight:700;
+    transition:.3s ease;
+}
+.kvkk-nav a:hover{
+    color:var(--orange);
+    padding-left:8px;
+}
+.kvkk-content{
+    width: 100%;
+}
+.kvkk-section{
+    padding:0 0 70px;
+    margin-bottom:70px;
+    border-bottom:1px solid var(--line);
+    scroll-margin-top:120px;
+}
+.kvkk-section:last-child{
+    margin-bottom:0;
+    border-bottom:0;
+}
+.kvkk-number{
+    display:block;
+    margin-bottom:20px;
+    color:var(--orange);
+    font-size:10px;
+    font-weight:800;
+    letter-spacing:.16em;
+}
+.kvkk-section h2{
+    margin-bottom:25px;
+    font-size:32px;
+    line-height:1;
+    letter-spacing:-.04em;
+}
+.kvkk-section p{
+    margin-bottom:18px;
+    color:#555;
+    font-size:15px;
+    line-height:1.85;
+}
+.kvkk-section p:last-child{
+    margin-bottom:0;
+}
+.kvkk-section strong{
+    color:var(--dark);
+}
+.kvkk-list{
+    margin:25px 0 0;
+    padding-left:20px;
+}
+.kvkk-list li{
+    margin-bottom:12px;
+    padding-left:8px;
+    color:#555;
+    font-size:15px;
+    line-height:1.7;
+}
+.kvkk-highlight{
+    margin-top:30px;
+    padding:30px;
+    background:var(--dark);
+    color:#fff;
+}
+.kvkk-highlight p{
+    margin:0;
+    color:rgba(255,255,255,.75);
+}
+.kvkk-highlight strong{
+    color:#fff;
+}
+.kvkk-contact{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    margin-top:30px;
+}
+.kvkk-contact-item{
+    padding:25px;
+    border:1px solid var(--line);
+}
+.kvkk-contact-item span{
+    display:block;
+    margin-bottom:10px;
+    color:var(--muted);
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:.15em;
+}
+.kvkk-contact-item p{
+    margin:0;
+    color:var(--dark);
+    font-size:14px;
+    line-height:1.6;
+}
+.kvkk-footer{
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+    margin-top:120px;
+    padding-top:25px;
+    border-top:1px solid var(--line);
+    color:var(--muted);
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:.14em;
+}
+@media(max-width:900px){
+    .kvkk-layout{
+        grid-template-columns:1fr;
+        gap:0;
+    }
+    .kvkk-nav{
+        display:none;
+    }
+    .kvkk-mobile-nav{
+        position:sticky;
+        top:70px;
+        z-index:50;
+        display:flex;
+        align-items:center;
+        gap:8px;
+        width:100vw;
+        margin-left:-5vw;
+        padding:10px 5vw;
+        background:rgba(253,251,247,.94);
+        backdrop-filter:blur(15px);
+        overflow-x:auto;
+        scrollbar-width:none;
+    }
+    .kvkk-mobile-nav::-webkit-scrollbar{
+        display:none;
+    }
+    .kvkk-mobile-nav a{
+        flex:0 0 auto;
+        width:42px;
+        height:42px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        border:1px solid var(--line);
+        border-radius:50%;
+        background:var(--cream);
+        color:var(--dark);
+        text-decoration:none;
+        font-size:10px;
+        font-weight:800;
+        transition:.3s ease;
+    }
+    .kvkk-mobile-nav a:hover{
+        background:var(--orange);
+        border-color:var(--orange);
+        color:#fff;
+    }
+}
+@media(max-width:600px){
+    .kvkk-page{
+        padding:15px 5% 70px;
+    }
+    .kvkk-header{
+        top:15px;
+    }
+    .kvkk-logo img{
+        width:115px;
+    }
+    .kvkk-back{
+        padding:10px 14px;
+        font-size:8px;
+    }
+    .kvkk-hero{
+        padding:145px 0 80px;
+    }
+    .kvkk-title{
+        font-size:clamp(55px,18vw,100px);
+    }
+    .kvkk-intro{
+        margin-top:40px;
+        font-size:16px;
+    }
+    .kvkk-nav{
+        top:70px;
+    }
+    .kvkk-section{
+        padding-bottom:50px;
+        margin-bottom:50px;
+    }
+    .kvkk-section h2{
+        font-size:27px;
+    }
+    .kvkk-section p{
+        font-size:14px;
+    }
+    .kvkk-list li{
+        font-size:14px;
+    }
+    .kvkk-contact{
+        grid-template-columns:1fr;
+    }
+    .kvkk-footer{
+        flex-direction:column;
+        gap:10px;
+        margin-top:80px;
+    }
+}

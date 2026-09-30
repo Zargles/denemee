@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zargles - @zargles">
+    <title>Elektrik • Anahtar Group</title>
+    <meta name="description" content="Anahtar Group elektrik hizmetleriyle konut, iş yeri ve yapı projeleri için güvenilir elektrik çözümleri sunuyor. Elektrik uygulamaları ve proje ihtiyaçlarınız için bizimle iletişime geçin.">
+    <link rel="canonical" href="https://anahtargroup.com/hizmetler/elektrik.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://anahtargroup.com/hizmetler/elektrik.html">
+    <meta property="og:title" content="Elektrik • Anahtar Group">
+    <meta property="og:description" content="Anahtar Group elektrik hizmetleriyle konut, iş yeri ve yapı projeleri için güvenilir elektrik çözümleri sunuyor.">
+    <meta property="og:image" content="https://anahtargroup.com/pics/logolar/logoOG.jpg">
+    <meta property="og:site_name" content="Anahtar Group">
+    <meta property="og:locale" content="tr_TR">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Elektrik • Anahtar Group">
+    <meta name="twitter:description" content="Anahtar Group elektrik hizmetleriyle konut, iş yeri ve yapı projeleri için güvenilir elektrik çözümleri sunuyor.">
+    <meta name="twitter:image" content="https://anahtargroup.com/pics/logolar/logoOG.jpg">
+
+    <link rel="icon" type="image/x-icon" href="../pics/logolar/sadeLogo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/hizmetler/elektrik.css">
+    <link rel="stylesheet" href="../css/efektler.css">
+</head>
+<div class="image-modal" id="imageModal">
+    <div class="image-modal-bg"></div>
+    <div class="image-modal-decoration image-modal-decoration-left">
+        <span>ANAHTAR</span>
+        <span>GROUP</span>
+    </div>
+    <div class="image-modal-decoration image-modal-decoration-right">
+        <span>ANAHTAR</span>
+        <span>GROUP</span>
+    </div>
+    <div class="image-modal-decoration image-modal-decoration-top">
+        <span>ANAHTAR GROUP</span>
+    </div>
+    <div class="image-modal-decoration image-modal-decoration-bottom">
+        <span>ANAHTAR GROUP</span>
+    </div>
+    <button class="image-modal-close" id="imageModalClose" aria-label="Kapat">
+        <span></span>
+        <span></span>
+    </button>
+    <div class="image-modal-content">
+        <img id="imageModalImg" src="" alt="">
+    </div>
+</div>
+<body>
+    <div class="cursor-follower"></div>
+    <div id="loader">
+        <img src="../pics/logolar/sadeLogoBeyaz.png" alt="Anahtar Group">
+    </div>
+    <div class="cursor-glow"></div>
+    <header class="header" id="header">
+        <a href="../index.html" class="header-logo">
+            <img src="../pics/logolar/AnahtarGroupSade.png" alt="Anahtar Group">
+        </a>
+        <nav class="header-nav">
+            <a href="../hakkimizda.html">Hakkımızda</a>
+            <div class="header-service">
+                <a href="../hizmetler.html">
+                    Hizmetler
+                    <span class="header-service-arrow">⌄</span>
+                </a>
+                <div class="header-service-dropdown">
+                    <a href="../hizmetler/elektrik.html">
+                        Elektrik
+                        <span>↗</span>
+                    </a>
+                    <a href="../hizmetler/tadilat.html">
+                        Tadilat
+                        <span>↗</span>
+                    </a>
+                </div>
+            </div>
+            <a href="../projeler.html">Projeler</a>
+            <a href="../sss.html">SSS</a>
+            <a href="../kariyer.html">Kariyer</a>
+        </nav>
+        <div class="header-right">
+            <a href="../iletisim.html" class="header-contact">
+                İletişime Geç
+                <span>↗</span>
+            </a>
+            <button class="menu-button" id="menuButton" aria-label="Menüyü aç">
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </header>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-inner">
+            <nav class="mobile-links">
+                <a href="../hakkimizda.html" class="mobile-link">
+                    <span class="mobile-link-number">01</span>
+                    <span class="mobile-link-text">Hakkımızda</span>
+                    <span class="mobile-link-arrow">↗</span>
+                </a>
+                <div class="mobile-service" id="mobileService">
+                    <div class="mobile-service-main mobile-link">
+                        <span class="mobile-link-number">02</span>
+                        <a href="../hizmetler.html" class="mobile-link-text">Hizmetler</a>
+                        <button class="mobile-service-toggle" id="mobileServiceToggle" aria-label="Hizmetler alt menüsünü aç" aria-expanded="false">
+                            <span>⌄</span>
+                        </button>
+                    </div>
+                    <div class="mobile-service-submenu">
+                        <div class="mobile-service-submenu-inner">
+                            <a href="../hizmetler/elektrik.html">
+                                Elektrik
+                                <span>↗</span>
+                            </a>
+                            <a href="../hizmetler/tadilat.html">
+                                Tadilat
+                                <span>↗</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="../projeler.html" class="mobile-link">
+                    <span class="mobile-link-number">03</span>
+                    <span class="mobile-link-text">Projeler</span>
+                    <span class="mobile-link-arrow">↗</span>
+                </a>
+                <a href="../sss.html" class="mobile-link">
+                    <span class="mobile-link-number">04</span>
+                    <span class="mobile-link-text">SSS</span>
+                    <span class="mobile-link-arrow">↗</span>
+                </a>
+                <a href="../kariyer.html" class="mobile-link">
+                    <span class="mobile-link-number">05</span>
+                    <span class="mobile-link-text">Kariyer</span>
+                    <span class="mobile-link-arrow">↗</span>
+                </a>
+                <a href="../iletisim.html" class="mobile-link">
+                    <span class="mobile-link-number">06</span>
+                    <span class="mobile-link-text">İletişim</span>
+                    <span class="mobile-link-arrow">↗</span>
+                </a>
+            </nav>
+            <div class="mobile-bottom">
+                <div class="mobile-bottom-left">
+                    <span class="mobile-bottom-label">ANAHTAR GROUP</span>
+                    <span class="mobile-bottom-mail">Hayalleriniz için buradayız.</span>
+                </div>
+                <div class="mobile-signature">ANAHTAR</div>
+            </div>
+        </div>
+    </div>
+    <section class="electric-hero">
+        <div class="electric-hero-main">
+            <div class="electric-hero-copy">
+                <span class="electric-kicker reveal">ELEKTRİK SİSTEMLERİ</span>
+
+                <h1 class="reveal">
+                    Gücün<br>
+                    doğru <em>yerde</em><br>
+                    olması.
+                </h1>
+
+                <p class="electric-hero-text reveal">
+                    Elektrik altyapısından pano sistemlerine, aydınlatmadan
+                    zayıf akım çözümlerine kadar yapıların ihtiyaç duyduğu
+                    tüm elektrik sistemlerini projelendiriyor ve uyguluyoruz.
+                </p>
+            </div>
+
+            <div class="electric-hero-image reveal">
+                <img class="image-preview" src="../pics/assets/parla15.jpg" alt="Elektrik tesisatı">
+                <div class="electric-hero-image-label">
+                    <span>ANAHTAR GROUP</span>
+                    <span>ELEKTRİK · TEKNİK · SİSTEM</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="electric-hero-bottom reveal">
+            <span>FİKİRDEN GERÇEĞE</span>
+        </div>
+    </section>
+
+    <section class="electric-manifesto">
+        <div class="electric-manifesto-bg reveal">ELEKTRİK</div>
+
+        <div class="electric-manifesto-top reveal">
+            <span>ANAHTAR GROUP</span>
+        </div>
+
+        <div class="electric-manifesto-content">
+            <span class="electric-manifesto-kicker reveal">BİZİM İÇİN ELEKTRİK</span>
+
+            <h2 class="reveal">
+                Sadece enerji<br>
+                <span>sağlamıyoruz.</span><br>
+                Sistemin tamamını<br>
+                düşünüyoruz.
+            </h2>
+        </div>
+
+        <div class="electric-manifesto-bottom reveal">
+            <span>PLANLA · UYGULA · KONTROL ET</span>
+            <span>ANAHTAR GROUP</span>
+        </div>
+    </section>
+
+    <section class="electric-services">
+        <div class="section-top reveal">
+            <span>ANAHTAR GROUP</span>
+            <span>NELER YAPIYORUZ?</span>
+        </div>
+
+        <div class="electric-services-intro reveal">
+            <small>ELEKTRİK HİZMETLERİ</small>
+
+            <h2 class="reveal">
+                İhtiyacınız olan<br>
+                <span style="color:#bf441b;">tüm sistemler.</span>
+            </h2>
+        </div>
+
+        <div class="electric-services-list">
+            <a href="#tesisat" class="electric-service reveal">
+                <span class="electric-service-number">01</span>
+                <h3>Elektrik Tesisatı</h3>
+                <span class="electric-service-arrow">↗</span>
+            </a>
+
+            <a href="#pano" class="electric-service reveal">
+                <span class="electric-service-number">02</span>
+                <h3>Pano & Kompanzasyon</h3>
+                <span class="electric-service-arrow">↗</span>
+            </a>
+
+            <a href="#aydinlatma" class="electric-service reveal">
+                <span class="electric-service-number">03</span>
+                <h3>Aydınlatma Sistemleri</h3>
+                <span class="electric-service-arrow">↗</span>
+            </a>
+
+            <a href="#aydinlatma" class="electric-service reveal">
+                <span class="electric-service-number">04</span>
+                <h3>Priz & Anahtar Sistemleri</h3>
+                <span class="electric-service-arrow">↗</span>
+            </a>
+
+            <a href="#zayif-akim" class="electric-service reveal">
+                <span class="electric-service-number">05</span>
+                <h3>Zayıf Akım</h3>
+                <span class="electric-service-arrow">↗</span>
+            </a>
+
+            <a href="#zayif-akim" class="electric-service reveal">
+                <span class="electric-service-number">06</span>
+                <h3>Kamera & Güvenlik</h3>
+                <span class="electric-service-arrow">↗</span>
+            </a>
+
+            <a href="#zayif-akim" class="electric-service reveal">
+                <span class="electric-service-number">07</span>
+                <h3>Yangın Algılama</h3>
+                <span class="electric-service-arrow">↗</span>
+            </a>
+
+            <a href="#zayif-akim" class="electric-service reveal">
+                <span class="electric-service-number">08</span>
+                <h3>Anons & Ses Sistemleri</h3>
+                <span class="electric-service-arrow">↗</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="electric-detail scroll-target" id="tesisat">
+        <div class="electric-detail-image">
+            <img class="image-preview" src="../pics/assets/parla13.jpg" alt="Elektrik tesisatı uygulaması">
+        </div>
+
+        <div class="electric-detail-copy">
+            <span class="detail-number reveal reveal">01 / ELEKTRİK TESİSATI</span>
+
+            <h2 class="reveal">
+                Altyapıdan<br>
+                <span style="color:#bf441b;">uygulamaya.</span>
+            </h2>
+
+            <p class="reveal">
+                Yeni yapılarda sıfırdan elektrik tesisatı kurulumu,
+                mevcut yapılarda ise elektrik altyapısının yenilenmesi
+                ve iyileştirilmesini gerçekleştiriyoruz. Projenin
+                ihtiyaçlarına göre kablo altyapısından hat ve devre
+                düzenlemelerine kadar tüm süreci planlıyoruz.
+            </p>
+
+            <div class="detail-tags reveal">
+                <span>SIFIRDAN TESİSAT</span>
+                <span>TESİSAT YENİLEME</span>
+                <span>KABLO ALTYAPISI</span>
+                <span>DEVRE DÜZENLEMESİ</span>
+                <span>PRİZ & ANAHTAR</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="electric-dark scroll-target" id="pano">
+        <div class="electric-dark-grid">
+            <div>
+                <span class="electric-dark-label reveal">02 / PANO & KOMPANZASYON</span>
+
+                <h2 class="reveal">
+                    Sistemlerin<br>
+                    <span>merkezi.</span>
+                </h2>
+
+                <p class="electric-dark-text reveal">
+                    Elektrik dağıtımının güvenli ve düzenli şekilde
+                    gerçekleşmesi için ihtiyaç duyulan pano sistemlerini
+                    projelendiriyor, kuruyor, yeniliyor ve düzenliyoruz.
+                    Kompanzasyon sistemleriyle birlikte yapının elektrik
+                    altyapısına uygun çözümler sunuyoruz.
+                </p>
+
+                <div class="electric-dark-list reveal">
+                    <div>Ana dağıtım panoları</div>
+                    <div>Tali dağıtım panoları</div>
+                    <div>Kompanzasyon panoları</div>
+                    <div>Sigorta sistemleri</div>
+                    <div>Kaçak akım koruma</div>
+                    <div>Pano yenileme</div>
+                    <div>Pano düzenleme</div>
+                    <div>Ölçüm & kontrol</div>
+                </div>
+            </div>
+
+            <div class="electric-dark-image reveal">
+                <img class="image-preview" src="../pics/assets/parla6.jpg" alt="Elektrik pano sistemi">
+            </div>
+        </div>
+    </section>
+
+    <section class="electric-lighting scroll-target" id="aydinlatma">
+        <div class="section-top reveal">
+            <span>03 / AYDINLATMA</span>
+            <span>IŞIK & MEKÂN</span>
+        </div>
+
+        <div class="lighting-head">
+            <h2 class="reveal">
+                Işığı sadece<br>
+                vermiyoruz.<br>
+                <span>mekânı tanımlıyoruz.</span>
+            </h2>
+
+            <p class="reveal">
+                İç ve dış mekân aydınlatmalarında kullanım amacı,
+                estetik ve teknik gereksinimleri birlikte değerlendirerek
+                işlevsel ve dengeli çözümler oluşturuyoruz.
+            </p>
+        </div>
+
+        <div class="lighting-image reveal">
+            <img class="image-preview" src="../pics/assets/parla8.jpg" alt="Mimari aydınlatma">
+        </div>
+    </section>
+
+    <section class="electric-weak scroll-target" id="zayif-akim">
+        <div class="section-top reveal">
+            <span>04 / ZAYIF AKIM</span>
+            <span>BAĞLANTI · GÜVENLİK · İLETİŞİM</span>
+        </div>
+
+        <div class="electric-weak-grid">
+            <div>
+                <h2 class="reveal">
+                    Yapının<br>
+                    <span>görünmeyen</span><br>
+                    sistemi.
+                </h2>
+
+                <p class="weak-description reveal">
+                    Elektrik enerjisinin yanında yapının güvenliği,
+                    iletişimi ve veri altyapısı için gereken zayıf akım
+                    sistemlerini de planlıyor ve uyguluyoruz.
+                    Sistemleri birbirinden bağımsız değil, yapının
+                    bütününü düşünerek ele alıyoruz.
+                </p>
+            </div>
+
+            <div class="weak-items">
+                <div class="weak-item reveal">
+                    <span>01</span>
+                    <h3>Kamera<br>Sistemleri</h3>
+                </div>
+
+                <div class="weak-item reveal">
+                    <span>02</span>
+                    <h3>Yangın<br>Algılama</h3>
+                </div>
+
+                <div class="weak-item reveal">
+                    <span>03</span>
+                    <h3>Data &<br>Network</h3>
+                </div>
+
+                <div class="weak-item reveal">
+                    <span>04</span>
+                    <h3>Anons &<br>Ses</h3>
+                </div>
+
+                <div class="weak-item reveal">
+                    <span>05</span>
+                    <h3>Güvenlik<br>Sistemleri</h3>
+                </div>
+
+                <div class="weak-item reveal">
+                    <span>06</span>
+                    <h3>İletişim<br>Altyapısı</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="final-cta">
+        <div class="final-cta-bg reveal">ANAHTAR</div>
+        <div class="final-cta-top reveal">
+            <span>ANAHTAR GROUP</span>
+            <span>Elektrik Sistemleri</span>
+        </div>
+        <div class="final-cta-content">
+            <span class="final-cta-kicker reveal">BİR FİKRİNİZ Mİ VAR?</span>
+            <h2 class="reveal">
+                Tüm tadilat işleriniz<br>
+                <em>için arayın.</em>
+            </h2>
+            <a href="../iletisim.html" class="final-cta-button">
+                <span>BİZE ULAŞIN</span>
+                <b>↗</b>
+            </a>
+        </div>
+        <div class="final-cta-bottom">
+            <span>Copyright © 2026.</span>
+            <span><a href="../legal/kvkk.html">KVKK</a></span>
+        </div>
+    </section>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WKKQSK5Y9B"></script>
+    <script src="../js/hamburgerMenu.js"></script>
+    <script src="../js/reveal.js"></script>
+    <script src="../js/cursor.js"></script>
+    <script src="../js/imageModel.js"></script>
+</body>
+</html>

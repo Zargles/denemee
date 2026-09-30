@@ -1,0 +1,844 @@
+
+:root{
+    --bg:#fdfbf7;
+    --black:#1e1e1e;
+    --orange:#bf441b;
+    --muted:rgba(30,30,30,.52);
+    --line:rgba(30,30,30,.11);
+    --header-height:100px;
+}
+a{
+    color:inherit;
+    text-decoration:none;
+}
+.electric-hero{
+    position:relative;
+    min-height:calc(100vh - 100px);
+    padding: 25px 5%;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.electric-hero-main{
+    position:relative;
+    z-index:2;
+    display:grid;
+    grid-template-columns:.85fr 1.15fr;
+    gap:7%;
+    align-items:center;
+    width:100%;
+    margin:auto;
+    padding:70px 0;
+}
+.electric-hero-copy{
+    position:relative;
+    z-index:3;
+}
+.electric-kicker{
+    display:block;
+    margin-bottom:35px;
+    color:var(--orange);
+    font-size:10px;
+    font-weight:800;
+    letter-spacing:.17em;
+}
+.electric-hero h1{
+    font-size:clamp(75px,10vw,160px);
+    line-height:.76;
+    letter-spacing:-.095em;
+    font-weight:900;
+    overflow-wrap:break-word;
+}
+.electric-hero h1 em{
+    color:var(--orange);
+    font-style:normal;
+}
+.electric-hero-text{
+    max-width:410px;
+    margin-top:45px;
+    color:var(--muted);
+    font-size:14px;
+    line-height:1.85;
+}
+.electric-hero-image{
+    position:relative;
+    height:620px;
+    overflow:hidden;
+    border-radius:50px;
+}
+.electric-hero-image img{
+    width: 100%;
+    height:100%;
+    object-fit:cover;
+    transition:transform 1s cubic-bezier(.2,.8,.2,1);
+}
+.electric-hero-image:hover img{
+    transform:scale(1.04);
+}
+.electric-hero-image::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.55));
+}
+.electric-hero-image-label{
+    position:absolute;
+    z-index:2;
+    left:30px;
+    right:30px;
+    bottom:25px;
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    color:rgba(255,255,255,.75);
+    font-size:8px;
+    font-weight:800;
+    letter-spacing:.15em;
+}
+.electric-hero-bottom{
+    display:flex;
+    justify-content:space-between;
+    padding-top:20px;
+    border-top:1px solid var(--line);
+    color:rgba(30,30,30,.3);
+    font-size:8px;
+    font-weight:800;
+    letter-spacing:.16em;
+}
+.electric-hero-bottom span:first-child{
+    color:var(--orange);
+}
+
+/* MANIFESTO */
+.electric-manifesto{
+    position:relative;
+    min-height:800px;
+    padding:100px 5% 55px;
+    overflow:hidden;
+    background:var(--black);
+    color:var(--bg);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.electric-manifesto-bg{
+    position:absolute;
+    right:-4%;
+    bottom:-5%;
+    font-size:clamp(180px,31vw,520px);
+    line-height:.7;
+    font-weight:900;
+    letter-spacing:-.12em;
+    color:transparent;
+    -webkit-text-stroke:1px rgba(253,251,247,.045);
+    white-space:nowrap;
+    pointer-events:none;
+}
+.electric-manifesto-top{
+    position:relative;
+    z-index:2;
+    display:flex;
+    justify-content:space-between;
+    padding-bottom:22px;
+    border-bottom:1px solid rgba(253,251,247,.12);
+    color:rgba(253,251,247,.35);
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:.17em;
+}
+.electric-manifesto-top span:first-child{
+    color:var(--orange);
+}
+.electric-manifesto-content{
+    position:relative;
+    z-index:2;
+    padding:80px 0;
+}
+.electric-manifesto-kicker{
+    display:block;
+    margin-bottom:40px;
+    color:var(--orange);
+    font-size:10px;
+    font-weight:800;
+    letter-spacing:.16em;
+}
+.electric-manifesto h2{
+    max-width:1250px;
+    font-size:clamp(65px,9vw,145px);
+    line-height:.8;
+    letter-spacing:-.09em;
+    font-weight:900;
+    overflow-wrap:break-word;
+}
+.electric-manifesto h2 span{
+    color:var(--orange);
+}
+.electric-manifesto-bottom{
+    position:relative;
+    z-index:2;
+    display:flex;
+    justify-content:space-between;
+    padding-top:20px;
+    border-top:1px solid rgba(253,251,247,.12);
+    color:rgba(253,251,247,.3);
+    font-size:8px;
+    font-weight:800;
+    letter-spacing:.16em;
+}
+.electric-manifesto-bottom span:first-child{
+    color:var(--orange);
+}
+
+/* SERVICES */
+.electric-services{
+    padding:120px 5% 60px;
+}
+.section-top{
+    display:flex;
+    justify-content:space-between;
+    padding-bottom:22px;
+    color:rgba(30,30,30,.35);
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:.17em;
+}
+.section-top span:first-child{
+    color:var(--orange);
+}
+.electric-services-intro{
+    display:grid;
+    grid-template-columns:.7fr 1.3fr;
+    gap:8%;
+    align-items:end;
+    padding:85px 0 70px;
+}
+.electric-services-intro small{
+    color:var(--orange);
+    font-size:10px;
+    font-weight:800;
+    letter-spacing:.16em;
+}
+.electric-services-intro h2{
+    max-width:900px;
+    font-size:clamp(55px,7.5vw,115px);
+    line-height:.83;
+    letter-spacing:-.08em;
+    font-weight:900;
+}
+.electric-services-list{
+    border-top:1px solid var(--line);
+}
+.electric-service{
+    position:relative;
+    display:grid;
+    grid-template-columns:80px minmax(0,1fr) 60px;
+    align-items:center;
+    gap:25px;
+    min-height:125px;
+    padding:20px 0;
+    border-bottom:1px solid var(--line);
+    transition:.4s ease;
+}
+.electric-service-number{
+    color:rgba(30,30,30,.3);
+    font-size:10px;
+    font-weight:800;
+    letter-spacing:.1em;
+}
+.electric-service h3{
+    min-width:0;
+    font-size:clamp(35px,5vw,75px);
+    line-height:.85;
+    letter-spacing:-.075em;
+    font-weight:800;
+    transition:.4s ease;
+    overflow-wrap:break-word;
+}
+.electric-service-arrow{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:48px;
+    height:48px;
+    border:1px solid var(--line);
+    border-radius:50%;
+    font-size:18px;
+    transition:.4s ease;
+}
+.electric-service:hover h3{
+    color:var(--orange);
+    transform:translateX(12px);
+}
+.electric-service:hover .electric-service-arrow{
+    color:#fff;
+    background:var(--orange);
+    border-color:var(--orange);
+    transform:rotate(45deg);
+}
+
+/* DETAIL */
+.electric-detail{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    min-height:700px;
+    margin-bottom: 5%;
+    padding: 25px 5%;
+}
+.electric-detail-image{
+    min-height:650px;
+}
+.electric-detail-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:transform 1s ease;
+    border-radius: 50px;
+}
+.electric-detail-image:hover  img{
+    transform:scale(1.03);
+}
+.electric-detail-copy{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:100px 10%;
+}
+.detail-number{
+    margin-bottom:30px;
+    color:var(--orange);
+    font-size:10px;
+    font-weight:800;
+    letter-spacing:.16em;
+}
+.electric-detail-copy h2{
+    margin-bottom:35px;
+    font-size:clamp(55px,7vw,105px);
+    line-height:.8;
+    letter-spacing:-.085em;
+    font-weight:900;
+}
+.electric-detail-copy p{
+    max-width:470px;
+    color:var(--muted);
+    font-size:14px;
+    line-height:1.85;
+}
+.detail-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:9px;
+    margin-top:40px;
+}
+.detail-tags span{
+    padding:10px 15px;
+    border:1px solid rgba(30,30,30,.14);
+    border-radius:50px;
+    color:rgba(30,30,30,.55);
+    font-size:8px;
+    font-weight:800;
+    letter-spacing:.08em;
+}
+
+/* DARK */
+.electric-dark{
+    padding:120px 5%;
+    background:var(--black);
+    color:var(--bg);
+}
+.electric-dark-grid{
+    display:grid;
+    grid-template-columns:.75fr 1.25fr;
+    gap:8%;
+    align-items:center;
+}
+.electric-dark-label{
+    color:var(--orange);
+    font-size:10px;
+    font-weight:800;
+    letter-spacing:.16em;
+}
+.electric-dark h2{
+    margin-top:35px;
+    font-size:clamp(60px,8vw,125px);
+    line-height:.78;
+    letter-spacing:-.09em;
+    font-weight:900;
+}
+.electric-dark h2 span{
+    color:var(--orange);
+}
+.electric-dark-text{
+    max-width:600px;
+    margin-top:35px;
+    color:rgba(253,251,247,.5);
+    font-size:14px;
+    line-height:1.85;
+}
+.electric-dark-list{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:0 50px;
+    margin-top:45px;
+    border-top:1px solid rgba(253,251,247,.13);
+}
+.electric-dark-list div{
+    padding:18px 0;
+    border-bottom:1px solid rgba(253,251,247,.13);
+    color:rgba(253,251,247,.65);
+    font-size:11px;
+    letter-spacing:.04em;
+}
+.electric-dark-list div::before{
+    content:"↗";
+    margin-right:12px;
+    color:var(--orange);
+}
+.electric-dark-image{
+    height:620px;
+    overflow:hidden;
+    border-radius:50px;
+}
+.electric-dark-image img{
+    height:100%;
+    width: 100%;
+    object-fit:cover;
+    transition:transform 1s ease;
+}
+.electric-dark-image:hover img{
+    transform:scale(1.04);
+}
+
+/* LIGHTING */
+.electric-lighting{
+    padding:120px 5%;
+}
+.lighting-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:50px;
+    margin-bottom:60px;
+}
+.lighting-head h2{
+    max-width:900px;
+    font-size:clamp(60px,8vw,125px);
+    line-height:.8;
+    letter-spacing:-.09em;
+    font-weight:900;
+}
+.lighting-head h2 span{
+    color:var(--orange);
+}
+.lighting-head p{
+    max-width:300px;
+    color:var(--muted);
+    font-size:13px;
+    line-height:1.8;
+}
+.lighting-image{
+    height:680px;
+    overflow:hidden;
+    border-radius:50px;
+}
+.lighting-image img{
+    width: 100%;
+    height:100%;
+    object-fit:cover;
+    transition:transform 1s ease;
+}
+.lighting-image:hover img{
+    transform:scale(1.03);
+}
+
+/* WEAK */
+.electric-weak{
+    padding:120px 5% 70px;
+}
+.electric-weak-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8%;
+    align-items:start;
+}
+.electric-weak h2{
+    margin-top:30px;
+    font-size:clamp(65px,8vw,125px);
+    line-height:.78;
+    letter-spacing:-.09em;
+    font-weight:900;
+}
+.electric-weak h2 span{
+    color:var(--orange);
+}
+.weak-description{
+    max-width:460px;
+    margin-top:50px;
+    color:var(--muted);
+    font-size:14px;
+    line-height:1.85;
+}
+.weak-items{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+.weak-item{
+    min-height:180px;
+    padding:25px;
+    border:1px solid rgba(30,30,30,.12);
+    border-radius:30px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    transition:.35s ease !important;
+}
+.weak-item:hover{
+    background:var(--orange);
+    color:#fff;
+    transform:translateY(-5px) !important;
+}
+.weak-item span{
+    color:var(--orange);
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:.14em;
+}
+.weak-item:hover span{
+    color:#fff;
+}
+.weak-item h3{
+    font-size:24px;
+    line-height:.95;
+    letter-spacing:-.05em;
+}
+
+/* FINAL */
+.electric-final{
+    position:relative;
+    min-height:650px;
+    padding:70px 5% 45px;
+    background:var(--black);
+    color:var(--bg);
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.electric-final-bg{
+    position:absolute;
+    right:-4%;
+    bottom:-5%;
+    font-size:clamp(180px,30vw,500px);
+    line-height:.7;
+    font-weight:900;
+    letter-spacing:-.12em;
+    color:transparent;
+    -webkit-text-stroke:1px rgba(253,251,247,.045);
+    pointer-events:none;
+}
+.electric-final-top,
+.electric-final-bottom{
+    position:relative;
+    z-index:2;
+    display:flex;
+    justify-content:space-between;
+    font-size:8px;
+    font-weight:800;
+    letter-spacing:.16em;
+    color:rgba(253,251,247,.3);
+}
+.electric-final-top{
+    padding-bottom:20px;
+    border-bottom:1px solid rgba(253,251,247,.12);
+}
+.electric-final-top span:first-child,
+.electric-final-bottom span:first-child{
+    color:var(--orange);
+}
+.electric-final-content{
+    position:relative;
+    z-index:2;
+    padding:70px 0;
+}
+.electric-final-kicker{
+    display:block;
+    margin-bottom:35px;
+    color:var(--orange);
+    font-size:10px;
+    font-weight:800;
+    letter-spacing:.16em;
+}
+.electric-final h2{
+    max-width:1100px;
+    font-size:clamp(65px,9vw,145px);
+    line-height:.8;
+    letter-spacing:-.09em;
+    font-weight:900;
+}
+.electric-final h2 em{
+    color:var(--orange);
+    font-style:normal;
+}
+.electric-final-button{
+    display:inline-flex;
+    align-items:center;
+    gap:20px;
+    margin-top:50px;
+    color:#fff;
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:.14em;
+}
+.electric-final-button b{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:50px;
+    height:50px;
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:50%;
+    font-size:18px;
+    font-weight:400;
+    transition:.35s ease;
+}
+.electric-final-button:hover b{
+    background:var(--orange);
+    border-color:var(--orange);
+    transform:rotate(45deg);
+}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+    :root{
+        --header-height:85px;
+    }
+    .header{
+        height:85px;
+    }
+    .header.scrolled{
+        height:72px;
+    }
+    .nav,
+    .header-contact{
+        display:none;
+    }
+    .menu-button{
+        display:block;
+    }
+    .electric-hero{
+        min-height:auto;
+    }
+    .electric-hero-main{
+        grid-template-columns:1fr;
+        gap:55px;
+    }
+    .electric-hero-image{
+        height:550px;
+    }
+    .electric-services-intro{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+    .electric-detail,
+    .electric-dark-grid,
+    .electric-weak-grid{
+        grid-template-columns:1fr;
+        gap: 30px;
+    }
+    .electric-detail-image{
+        min-height:550px;
+    }
+    .lighting-head{
+        display:block;
+    }
+    .lighting-head p{
+        margin-top:30px;
+    }
+}
+
+@media(max-width:600px){
+    :root{
+        --header-height:76px;
+    }
+    .header{
+        height:76px;
+        padding:0 5%;
+    }
+    .header.scrolled{
+        height:68px;
+    }
+    .logo{
+        width:130px;
+    }
+    .menu-button{
+        width:44px;
+        height:44px;
+    }
+    .mobile-menu-inner{
+        padding:115px 7% 30px;
+    }
+    .mobile-menu-link strong{
+        font-size:11vw;
+    }
+    .scroll-target{
+        scroll-margin-top:95px;
+    }
+    .electric-hero{
+        padding:25px 5%;
+        margin: 0px !important;
+    }
+    .electric-hero-main{
+        padding: 0;
+    }
+    .electric-hero h1{
+        font-size:18vw;
+    }
+    .electric-hero-text{
+        margin-top:30px;
+        font-size:13px;
+    }
+    .electric-hero-image{
+        height:440px;
+        border-radius:50px;
+    }
+    .electric-hero-image-label{
+        left:20px;
+        right:20px;
+        bottom:20px;
+        font-size:7px;
+    }
+    .electric-hero-bottom{
+        display: none;
+    }
+    .electric-manifesto{
+        min-height:650px;
+        padding:70px 5% 35px;
+    }
+    .electric-manifesto-top{
+        font-size:7px;
+    }
+    .electric-manifesto-content{
+        padding:60px 0;
+    }
+    .electric-manifesto h2{
+        font-size:14vw;
+        line-height:.84;
+    }
+    .electric-manifesto-bg{
+        right:-20%;
+        font-size:43vw;
+    }
+    .electric-services,
+    .electric-lighting,
+    .electric-weak{
+        padding:80px 5% 35px;
+    }
+    .electric-services-intro{
+        padding:60px 0 50px;
+    }
+    .electric-services-intro h2{
+        font-size:14vw;
+    }
+    .electric-service{
+        grid-template-columns:35px minmax(0,1fr) 40px;
+        gap:8px;
+        min-height:95px;
+        padding:18px 0;
+    }
+    .electric-service-number{
+        font-size:8px;
+    }
+    .electric-service h3{
+        font-size:7.7vw;
+        line-height:.88;
+    }
+    .electric-service:hover h3{
+        transform:none;
+    }
+    .electric-service-arrow{
+        width:36px;
+        height:36px;
+        font-size:14px;
+    }
+    .electric-detail-copy{
+        padding: 35px 0px;
+    }
+    .electric-detail-image{
+        min-height:430px;
+    }
+    .electric-detail-copy h2{
+        font-size:14vw;
+    }
+    .electric-detail-copy p{
+        font-size:13px;
+    }
+    .electric-dark{
+        padding:80px 5% 45px;
+    }
+    .electric-dark h2{
+        font-size:14vw;
+    }
+    .electric-dark-image{
+        height:430px;
+        border-radius:50px;
+        margin-top: 0px;
+    }
+    .electric-dark-list{
+        grid-template-columns:1fr;
+    }
+    .lighting-head h2{
+        font-size:14vw;
+    }
+    .lighting-image{
+        height:430px;
+        border-radius:50px;
+    }
+    .electric-weak h2{
+        font-size:14vw;
+    }
+    .weak-items{
+        grid-template-columns:1fr;
+        margin-top:50px;
+    }
+    .weak-item{
+        min-height:145px;
+    }
+    .weak-item:hover{
+        background: none;
+        color: #1e1e1e;
+        transform: none;
+    }
+    .weak-item:hover span{
+        color: #bf441b;
+    }
+    .electric-final{
+        min-height:600px;
+        padding:45px 5% 30px;
+    }
+    .electric-final-content{
+        padding:60px 0;
+    }
+    .electric-final h2{
+        font-size:14vw;
+    }
+    .electric-final-bg{
+        right:-20%;
+        font-size:43vw;
+    }
+    .electric-final-bottom{
+        font-size:7px;
+    }
+}
+
+@media(prefers-reduced-motion:reduce){
+    html{
+        scroll-behavior:auto;
+    }
+    *,
+    *::before,
+    *::after{
+        transition:none!important;
+        animation:none!important;
+    }
+}

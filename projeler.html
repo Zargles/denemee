@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zargles - @zargles">
+    <title>Projeler • Anahtar Group</title>
+    <meta name="description" content="Anahtar Group tarafından gerçekleştirilen yapı, tadilat ve elektrik projelerini inceleyin. Tamamlanan ve devam eden projelerimizden ilham alın.">
+    <link rel="canonical" href="https://anahtargroup.com/projeler.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://anahtargroup.com/projeler.html">
+    <meta property="og:title" content="Projeler • Anahtar Group">
+    <meta property="og:description" content="Anahtar Group tarafından gerçekleştirilen yapı, tadilat ve elektrik projelerini inceleyin. Tamamlanan ve devam eden projelerimizden ilham alın.">
+    <meta property="og:image" content="https://anahtargroup.com/pics/logolar/logoOG.jpg">
+    <meta property="og:site_name" content="Anahtar Group">
+    <meta property="og:locale" content="tr_TR">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Projeler • Anahtar Group">
+    <meta name="twitter:description" content="Anahtar Group tarafından gerçekleştirilen yapı, tadilat ve elektrik projelerini inceleyin. Tamamlanan ve devam eden projelerimizden ilham alın.">
+    <meta name="twitter:image" content="https://anahtargroup.com/pics/logolar/logoOG.jpg">
+    
+    <link rel="icon" type="image/x-icon" href="/pics/logolar/sadeLogo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/efektler.css">
+    <link rel="stylesheet" href="css/projelerimiz.css">
+</head>
+<div class="image-modal" id="imageModal">
+    <div class="image-modal-bg"></div>
+    <div class="image-modal-decoration image-modal-decoration-left">
+        <span>ANAHTAR</span>
+        <span>GROUP</span>
+    </div>
+    <div class="image-modal-decoration image-modal-decoration-right">
+        <span>ANAHTAR</span>
+        <span>GROUP</span>
+    </div>
+    <div class="image-modal-decoration image-modal-decoration-top">
+        <span>ANAHTAR GROUP</span>
+    </div>
+    <div class="image-modal-decoration image-modal-decoration-bottom">
+        <span>ANAHTAR GROUP</span>
+    </div>
+    <button class="image-modal-close" id="imageModalClose" aria-label="Kapat">
+        <span></span>
+        <span></span>
+    </button>
+    <div class="image-modal-content">
+        <img id="imageModalImg" src="" alt="">
+    </div>
+</div>
+<body>
+    <div class="cursor-follower"></div>
+    <div id="loader">
+        <img src="pics/logolar/sadeLogoBeyaz.png" alt="Anahtar Group">
+    </div>
+    <header class="header" id="header">
+        <a href="../index.html" class="header-logo">
+            <img src="../pics/logolar/AnahtarGroupSade.png" alt="Anahtar Group">
+        </a>
+        <nav class="header-nav">
+            <a href="../hakkimizda.html">Hakkımızda</a>
+            <div class="header-service">
+                <a href="../hizmetler.html">
+                    Hizmetler
+                    <span class="header-service-arrow">⌄</span>
+                </a>
+                <div class="header-service-dropdown">
+                    <a href="../hizmetler/elektrik.html">
+                        Elektrik
+                        <span>↗</span>
+                    </a>
+                    <a href="../hizmetler/tadilat.html">
+                        Tadilat
+                        <span>↗</span>
+                    </a>
+                </div>
+            </div>
+            <a href="../projeler.html">Projeler</a>
+            <a href="../sss.html">SSS</a>
+            <a href="../kariyer.html">Kariyer</a>
+        </nav>
+        <div class="header-right">
+            <a href="../iletisim.html" class="header-contact">
+                İletişime Geç
+                <span>↗</span>
+            </a>
+            <button class="menu-button" id="menuButton" aria-label="Menüyü aç">
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </header>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-inner">
+            <nav class="mobile-links">
+                <a href="../hakkimizda.html" class="mobile-link">
+                    <span class="mobile-link-number">01</span>
+                    <span class="mobile-link-text">Hakkımızda</span>
+                    <span class="mobile-link-arrow">↗</span>
+                </a>
+                <div class="mobile-service" id="mobileService">
+                    <div class="mobile-service-main mobile-link">
+                        <span class="mobile-link-number">02</span>
+                        <a href="../hizmetler.html" class="mobile-link-text">Hizmetler</a>
+                        <button class="mobile-service-toggle" id="mobileServiceToggle" aria-label="Hizmetler alt menüsünü aç" aria-expanded="false">
+                            <span>⌄</span>
+                        </button>
+                    </div>
+                    <div class="mobile-service-submenu">
+                        <div class="mobile-service-submenu-inner">
+                            <a href="../hizmetler/elektrik.html">
+                                Elektrik
+                                <span>↗</span>
+                            </a>
+                            <a href="../hizmetler/tadilat.html">
+                                Tadilat
+                                <span>↗</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="../projeler.html" class="mobile-link">
+                    <span class="mobile-link-number">03</span>
+                    <span class="mobile-link-text">Projeler</span>
+                    <span class="mobile-link-arrow">↗</span>
+                </a>
+                <a href="../sss.html" class="mobile-link">
+                    <span class="mobile-link-number">04</span>
+                    <span class="mobile-link-text">SSS</span>
+                    <span class="mobile-link-arrow">↗</span>
+                </a>
+                <a href="../kariyer.html" class="mobile-link">
+                    <span class="mobile-link-number">05</span>
+                    <span class="mobile-link-text">Kariyer</span>
+                    <span class="mobile-link-arrow">↗</span>
+                </a>
+                <a href="../iletisim.html" class="mobile-link">
+                    <span class="mobile-link-number">06</span>
+                    <span class="mobile-link-text">İletişim</span>
+                    <span class="mobile-link-arrow">↗</span>
+                </a>
+            </nav>
+            <div class="mobile-bottom">
+                <div class="mobile-bottom-left">
+                    <span class="mobile-bottom-label">ANAHTAR GROUP</span>
+                    <span class="mobile-bottom-mail">Hayalleriniz için buradayız.</span>
+                </div>
+                <div class="mobile-signature">ANAHTAR</div>
+            </div>
+        </div>
+    </div>
+    <section class="services-hero" id="hero3">
+        <div class="services-hero-bg"></div>
+            <div class="services-hero-content">
+                <div class="services-hero-top">
+                    <div class="services-hero-kicker reveal">Projeler</div>
+                    <div class="services-hero-index reveal"><strong>03</strong> / 04</div>
+                </div>
+                <h1 class="services-hero-title reveal">
+                    <span>Hayalden</span>
+                    <span class="outline">gerçeğe.</span>
+                </h1>
+                <div class="services-hero-bottom">
+                    <p class="services-hero-description reveal">Yakın zamanda gerçekleştirdiğimiz projeler, uygulamalar ve ortaya koyduğumuz işler.</p>
+                    <div class="services-hero-list reveal">
+                        <div class="services-hero-service"><span>01</span> Parla Bakery</div>
+                        <div class="services-hero-service"><span>02</span> Diver Karadeniz Mutfağı</div>
+                        <div class="services-hero-service"><span>03</span> Kıyı EGM</div>
+                        <div class="services-hero-service"><span>04</span> Onur Fırın</div>
+                        <div class="services-hero-service"><span>05</span> Maslak Office Building</div>
+                        <div class="services-hero-service"><span>06</span> Meister</div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <main class="projects-list">
+        <section class="project project-01 scroll-target" id="parla">
+            <div class="project-header">
+                <div class="project-number reveal">01 / 04</div>
+                <h2 class="project-title reveal">
+                    Parla<br>Bakery
+                </h2>
+                <div class="project-meta">
+                    <div class="project-meta-location reveal">
+                        İSTANBUL ·BAHÇELİEVLER · 2025
+                    </div>
+                    <p>
+                        Tadilat, elektrik ve iç mekân uygulamalarını kapsayan sıfırdan kurulum
+                    </p>
+                </div>
+            </div>
+            <div class="project-gallery">
+                <div class="project-main-image reveal">
+                    <img class="image-preview" src="pics/assets/parla1.jpg" alt="Konut Projesi">
+                </div>
+                <div class="project-small-images reveal">
+                    <div class="project-small-image">
+                        <img class="image-preview" src="pics/assets/parla12.jpg" alt="Parla Bakery">
+                    </div>
+                    <div class="project-small-image reveal">
+                        <img class="image-preview" src="pics/assets/parla14.jpg" alt="Parla Bakery">
+                    </div>
+                    <div class="project-small-image reveal">
+                        <img class="image-preview" src="pics/assets/parla11.jpg" alt="Parla Bakery">
+                    </div>
+                </div>
+
+            </div>
+            <div class="project-footer reveal">
+                <span>TASARIM · UYGULAMA · TESLİM</span>
+            </div>
+        </section>
+        <section class="project project-02 scroll-target" id="meister">
+            <div class="project-header">
+                <div class="project-number reveal">02 / 04</div>
+                <h2 class="project-title reveal">
+                    Meister<br>Pasta & Cafe & Döner
+                </h2>
+                <div class="project-meta">
+                    <div class="project-meta-location reveal">
+                        İSTANBUL · KOZYATAĞI · 2026
+                    </div>
+                    <p class="reveal">
+                        Elektrik, seramik, duvar kaplaması ve reklam panolarını kapsayan sıfırdan kurulum
+                    </p>
+                </div>
+            </div>
+            <div class="project-gallery">
+
+                <div class="project-image reveal">
+                    <img class="image-preview" src="pics/assets/meister5.jpg" alt="Meister">
+                </div>
+
+                <div class="project-image reveal">
+                    <img class="image-preview" src="pics/assets/meister2.jpg" alt="Meister">
+                </div>
+
+            </div>
+            <div class="project-footer reveal">
+                <span>TADİLAT · DEKORASYON</span>
+            </div>
+        </section>
+        <section class="project project-03 scroll-target" id="maslak">
+            <div class="project-header">
+                <div class="project-number reveal">03 / 04</div>
+
+                <h2 class="project-title reveal">
+                    Danfoss<br>Maslak
+                </h2>
+                <div class="project-meta">
+                    <div class="project-meta-location reveal">
+                        İSTANBUL · MASLAK · 2026
+                    </div>
+                    <p class="reveal">
+                        Zayıf akım dahil elektrik altyapısının yenilenmesi, genel ofis tadilatı ve kurulumu
+                    </p>
+                </div>
+            </div>
+            <div class="project-gallery">
+                <div class="project-image reveal">
+                    <img class="image-preview" src="pics/assets/maslak2.jpg" alt="Elektrik Projesi">
+                </div>
+                <div class="project-image reveal">
+                    <img class="image-preview" src="pics/assets/maslak3.jpg" alt="Elektrik Projesi">
+                </div>
+            </div>
+            <div class="project-footer reveal">
+                <span>ELEKTRİK · TEKNİK UYGULAMA</span>
+            </div>
+        </section>
+        <section class="project project-04">
+            <div class="project-header">
+                <div class="project-number reveal">04 / 04</div>
+                <h2 class="project-title reveal">
+                    Kıyı EGM<br>Server Room
+                </h2>
+                <div class="project-meta">
+                    <div class="project-meta-location reveal">
+                        İSTANBUL · BEYLERBEYİ · 2026
+                    </div>
+                    <p class="reveal">
+                        Yükseltilmiş zemin, yangın sistemi ve elektrik tesisatını kapsayan tadilat
+                    </p>
+                </div>
+            </div>
+            <div class="project-gallery">
+                <div class="project-image reveal">
+                    <img class="image-preview" src="pics/assets/EGM2.jpg" alt="Özel Uygulama">
+                </div>
+                <div class="project-note">
+                    <span class="project-note-number reveal">04 / 04</span>
+                    <h3 class="reveal">
+                        Küçük işler,
+                        büyük farklar.
+                    </h3>
+                    <p class="reveal">
+                        Her proje aynı ölçekte olmayabilir.
+                        Ancak bizim için her uygulama, ortaya
+                        iyi bir iş koymak için aynı özeni hak eder.
+                    </p>
+                </div>
+            </div>
+            <div class="project-footer reveal">
+                <span>TADİLAT · ELEKTRİK </span>
+            </div>
+        </section>
+    </main>
+    <section class="final-cta">
+        <div class="final-cta-bg reveal">ANAHTAR</div>
+        <div class="final-cta-top reveal">
+            <span>ANAHTAR GROUP</span>
+            <span>Projeler</span>
+        </div>
+        <div class="final-cta-content">
+            <span class="final-cta-kicker reveal">BİR FİKRİNİZ Mİ VAR?</span>
+            <h2 class="reveal">
+                Projenizi<br>
+                <em>konuşalım.</em>
+            </h2>
+            <a href="../iletisim.html" class="final-cta-button">
+                <span>BİZE ULAŞIN</span>
+                <b>↗</b>
+            </a>
+        </div>
+        <div class="final-cta-bottom">
+            <span>Copyright © 2026.</span>
+            <span><a href="../legal/kvkk.html">KVKK</a></span>
+        </div>
+    </section>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WKKQSK5Y9B"></script>
+    <script src="../js/hamburgerMenu.js"></script>
+    <script src="../js/reveal.js"></script>
+    <script src="../js/cursor.js"></script>
+    <script src="../js/imageModel.js"></script>
+</body>
+</html>
